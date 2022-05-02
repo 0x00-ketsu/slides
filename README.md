@@ -16,7 +16,7 @@
 ### Go
 
 ```shell
-go install github.com/0x00-ketsu/smooth
+go install github.com/0x00-ketsu/smooth@latest
 ```
 
 From source
