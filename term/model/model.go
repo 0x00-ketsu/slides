@@ -4,7 +4,6 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/0x00-ketsu/smooth/config"
 	"github.com/0x00-ketsu/smooth/term/helper"
 	"github.com/0x00-ketsu/smooth/term/search"
 	"github.com/0x00-ketsu/smooth/term/styles"
@@ -27,13 +26,13 @@ type Model struct {
 	keys         helper.KeyMap
 	quitting     bool
 
-	Filename string                     // markdown file name
-	Page     int                        // current visit slide number, from 0
-	Config   config.Config              // read cofig file
-	Slide    string                     // current visit slide content (converted to markdown)
-	Slides   []string                   // all original slides
-	Theme    glamour.TermRendererOption // glamour style
-	Search   search.Search              // search input
+	Filename     string                     // markdown file name
+	Theme        string                     // markdown theme style
+	Page         int                        // current visit slide number, from 0
+	Slide        string                     // current visit slide content (converted to markdown)
+	Slides       []string                   // all original slides
+	Search       search.Search              // search input
+	termRenderer glamour.TermRendererOption // glamour style
 }
 
 func (m Model) Init() tea.Cmd {
@@ -201,8 +200,8 @@ func (m *Model) Initial() error {
 		return errors.New("no slides provided\n")
 	}
 
-	if m.Theme == nil {
-		m.Theme = styles.SelectTheme(m.Config.Theme)
+	if m.termRenderer == nil {
+		m.termRenderer = styles.SelectTheme(m.Theme)
 	}
 
 	m.help = help.New()

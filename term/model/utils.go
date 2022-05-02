@@ -14,7 +14,7 @@ import (
 
 // convert string to markdown style string
 func (m *Model) convertToMarkdown(slide string) (string, error) {
-	r, _ := glamour.NewTermRenderer(m.Theme, glamour.WithWordWrap(m.viewport.Width))
+	r, _ := glamour.NewTermRenderer(m.termRenderer, glamour.WithWordWrap(m.viewport.Width))
 
 	return r.Render(slide)
 }

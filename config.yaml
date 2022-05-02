@@ -1,5 +1,0 @@
----
-theme: smooth    # choices: smooth|ascii|light|dark|notty
-
-slide:
-  show-lineno: false
