@@ -1,7 +1,7 @@
 # Smooth
 
 `Smooth` is a terminal based preview tool for `markdown`.
-![image](./assets/screenshot.png) 
+![image](./_assets/screenshot.png) 
 
 ## Features
 
