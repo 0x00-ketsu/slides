@@ -1,7 +1,7 @@
 # Smooth
 
 `Smooth` is a terminal based preview tool for `markdown`.
-![image](./_assets/screenshot.png) 
+![image](./_assets/screenshot.png)
 
 ## Features
 
@@ -10,22 +10,21 @@
 - Search: search word
 - Tagbar: a preview of slides
 
-
 ## Install
 
 ### Go
 
-```shell
+```bash
 go install github.com/0x00-ketsu/smooth@latest
 ```
 
 From source
-```shell
+
+```bash
 git clone https://github.com/0x00-ketsu/smooth
 cd smooth
 make build
 ```
-
 
 ## Usage
 
@@ -65,12 +64,14 @@ You can use everything in markdown!
 ```
 
 Then, run:
-```shell
+
+```bash
 smooth example.md 
 ```
 
 `smooth` is accepts input from `stdin`:
-```
+
+```bash
 curl http://example.com/smooth.md | smooth
 ```
 
@@ -79,21 +80,27 @@ curl http://example.com/smooth.md | smooth
 #### Slide
 
 Go to specific slide:
+
 - number: `1`-`9`
 
 Go to first slide:
+
 - `g`
 
 Go to last slide:
+
 - `G`
 
 Go to previous slide:
+
 - `h`
 
 Go to next slide:
+
 - `l`
 
 Scroll donw/up slide:
+
 - `j`: scroll down
 - `k`: scroll up
 
@@ -106,6 +113,7 @@ Scroll donw/up slide:
 #### Tagbar
 
 Toggle Tagbar, default is hide
+
 - `t`
 
 #### Help
@@ -116,11 +124,11 @@ Toggle Tagbar, default is hide
 
 - `q` `esc` `ctrl-c`
 
-
 ## Inspiration by
 
 - [lookatme](https://github.com/d0c-s4vage/lookatme) by James Johnson
 - [slides](https://github.com/maaslalani/slides) by Maas Lalani
 
 ## License
+
 MIT
