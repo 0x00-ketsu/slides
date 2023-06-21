@@ -30,7 +30,7 @@ func (m *Model) extracSlides(content string) []string {
 // get markdown content from file
 func (m *Model) readFile() (string, error) {
 	if !utils.IsFileExist(m.Filename) {
-		return "", errors.New("File is not exist.")
+		return "", errors.New("File is not exist")
 	}
 
 	content, err := os.ReadFile(m.Filename)

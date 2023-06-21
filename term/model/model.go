@@ -197,7 +197,7 @@ func (m *Model) Initial() error {
 	}
 
 	if content == "" {
-		return errors.New("no slides provided\n")
+		return errors.New("no slides provided")
 	}
 
 	if m.termRenderer == nil {

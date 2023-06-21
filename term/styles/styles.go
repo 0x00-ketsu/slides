@@ -23,10 +23,8 @@ var (
 	Search = lipgloss.NewStyle().Faint(true).Align(lipgloss.Left).MarginLeft(2)
 )
 
-var (
-	//go:embed theme.json
-	DefaultTheme []byte
-)
+//go:embed theme.json
+var DefaultTheme []byte
 
 // SelectTheme sets theme
 func SelectTheme(theme string) glamour.TermRendererOption {

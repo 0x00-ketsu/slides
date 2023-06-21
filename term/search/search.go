@@ -52,7 +52,7 @@ func (s *Search) SetQuery(query string) {
 func (s *Search) Next(m Model) {
 	caches := s.Cache
 	if len(caches) > 0 {
-		s.CurrentCacheIndex += 1
+		s.CurrentCacheIndex++
 		if s.CurrentCacheIndex == len(caches) {
 			s.CurrentCacheIndex = 0
 		}
@@ -63,7 +63,7 @@ func (s *Search) Next(m Model) {
 func (s *Search) Previous(m Model) {
 	caches := s.Cache
 	if len(caches) > 0 {
-		s.CurrentCacheIndex -= 1
+		s.CurrentCacheIndex--
 		if s.CurrentCacheIndex == -1 {
 			s.CurrentCacheIndex = len(caches) - 1
 		}

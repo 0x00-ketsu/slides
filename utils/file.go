@@ -7,7 +7,6 @@ import (
 func IsFileExist(filePath string) bool {
 	if _, err := os.Stat(filePath); err != nil {
 		return false
-	} else {
-		return true
 	}
+	return true
 }
