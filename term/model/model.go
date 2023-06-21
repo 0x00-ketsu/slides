@@ -4,9 +4,9 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/0x00-ketsu/smooth/term/helper"
-	"github.com/0x00-ketsu/smooth/term/search"
-	"github.com/0x00-ketsu/smooth/term/styles"
+	"github.com/0x00-ketsu/slides/term/helper"
+	"github.com/0x00-ketsu/slides/term/search"
+	"github.com/0x00-ketsu/slides/term/styles"
 	"github.com/charmbracelet/bubbles/help"
 	"github.com/charmbracelet/bubbles/key"
 	"github.com/charmbracelet/bubbles/viewport"

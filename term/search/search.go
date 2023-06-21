@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/0x00-ketsu/smooth/term/styles"
+	"github.com/0x00-ketsu/slides/term/styles"
 	"github.com/charmbracelet/bubbles/textinput"
 )
 
@@ -95,7 +95,6 @@ func (s *Search) Execute(m Model) {
 	addCache := func(i int) {
 		content := slides[i]
 		if len(pattern.FindAllStringSubmatch(content, 1)) != 0 {
-
 			if !s.isCached(i) {
 				s.Cache = append(s.Cache, i)
 			}

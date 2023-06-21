@@ -1,4 +1,4 @@
-module github.com/0x00-ketsu/smooth
+module github.com/0x00-ketsu/slides
 
 go 1.16
 

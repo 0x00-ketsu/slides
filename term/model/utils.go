@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/0x00-ketsu/smooth/utils"
+	"github.com/0x00-ketsu/slides/utils"
 	"github.com/charmbracelet/glamour"
 )
 

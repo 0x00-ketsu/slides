@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/0x00-ketsu/smooth/cmd/flags"
-	"github.com/0x00-ketsu/smooth/term/model"
+	"github.com/0x00-ketsu/slides/cmd/flags"
+	"github.com/0x00-ketsu/slides/term/model"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/spf13/cobra"
 )

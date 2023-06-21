@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/0x00-ketsu/smooth/term/styles"
+	"github.com/0x00-ketsu/slides/term/styles"
 	"github.com/charmbracelet/lipgloss"
 )
 
