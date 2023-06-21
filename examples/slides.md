@@ -1,4 +1,5 @@
-# Welcome to Smooth
+# Welcome to Slides
+
 A Terminal based preview tool for markdown
 
 ```go
@@ -34,9 +35,9 @@ The *artichoke* is mentioned as a garden plant in the 8th century BC by Homer **
 
 ## Things to eat today
 
--  Carrots
--  Ramen
--  Currywurst
+- Carrots
+- Ramen
+- Currywurst
 
 ### Power levels of the aforementioned foods
 
@@ -77,6 +78,7 @@ main =
 ---
 
 # Markdown components
+
 You can use everything in markdown!
 * Like bulleted list
 * You know the deal
@@ -102,6 +104,7 @@ digraph {
     b -> c;
 }
 ```
+
 ```
 ┌───┐     ┌───┐     ┌───┐
 │ a │ ──▶ │ b │ ──▶ │ c │

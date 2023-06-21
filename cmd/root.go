@@ -12,7 +12,7 @@ import (
 
 // rootCmd represents the root command
 var rootCmd = &cobra.Command{
-	Use:   "smooth",
+	Use:   "slides",
 	Short: "A terminal based preview tool for markdown",
 	Run: func(cmd *cobra.Command, args []string) {
 		// Read file
@@ -21,17 +21,17 @@ var rootCmd = &cobra.Command{
 			filename = os.Args[1]
 		}
 
-		smooth := model.Model{
+		slides := model.Model{
 			Filename: filename,
 			Page:     0,
 			Theme: flags.Theme,
 		}
-		if err := smooth.Initial(); err != nil {
+		if err := slides.Initial(); err != nil {
 			fmt.Printf("Error: %v", err.Error())
 			os.Exit(0)
 		}
 
-		p := tea.NewProgram(smooth)
+		p := tea.NewProgram(slides)
 		if err := p.Start(); err != nil {
 			fmt.Printf("Error: %v\n", err)
 			os.Exit(0)
@@ -44,5 +44,5 @@ func Execute() error {
 }
 
 func init() {
-	rootCmd.PersistentFlags().StringVarP(&flags.Theme, "theme", "t", "smooth", "theme for markdown, choices: smooth|ascii|light|dark|notty")
+	rootCmd.PersistentFlags().StringVarP(&flags.Theme, "theme", "t", "slides", "theme for markdown, choices: slides|ascii|light|dark|notty")
 }

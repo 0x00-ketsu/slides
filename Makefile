@@ -1,5 +1,5 @@
 make:
-	go run main.go examples/smooth.md
+	go run main.go examples/slides.md
 
 build:
-	go build -o ./build/smooth
+	go build -o ./build/slides

@@ -1,6 +1,7 @@
-# Smooth
+# Slides
 
-`Smooth` is a terminal based preview tool for `markdown`.
+A terminal based preview tool for `markdown`.
+
 ![image](./_assets/screenshot.png)
 
 ## Features
@@ -15,14 +16,14 @@
 ### Go
 
 ```bash
-go install github.com/0x00-ketsu/smooth@latest
+go install github.com/0x00-ketsu/slides@latest
 ```
 
 From source
 
 ```bash
-git clone https://github.com/0x00-ketsu/smooth
-cd smooth
+git clone https://github.com/0x00-ketsu/slides.git
+cd slides
 make build
 ```
 
@@ -33,7 +34,7 @@ make build
 Create(or copy an exist) a markdown file contains your slides, here's a simple example:
 
 ```markdown
-# Welcome to Smooth
+# Welcome to Slides
 A Terminal based preview tool for markdown
 
 ---
@@ -66,13 +67,13 @@ You can use everything in markdown!
 Then, run:
 
 ```bash
-smooth example.md 
+slides example.md 
 ```
 
-`smooth` is accepts input from `stdin`:
+`slides` is accepts input from `stdin`:
 
 ```bash
-curl http://example.com/smooth.md | smooth
+curl http://example.com/slides.md | slides
 ```
 
 ### Keymaps
