@@ -2,14 +2,15 @@
 
 A terminal based preview tool for `markdown`.
 
-![image](./_assets/screenshot.png)
+![screenshot](./docs/assets/screenshot.png)
 
 ## Features
 
-- Turning: turn next/previous slide
-- Scroll: scroll up/down slide
-- Search: search word
-- Tagbar: a preview of slides
+- Navigation: move to the next or previous slide
+- Text Movement: move text up or down within a slide
+- Scrolling: scroll up or down within a slide
+- Search: search for a specific word
+- Tagbar: preview of slides
 
 ## Install
 
@@ -76,54 +77,17 @@ slides example.md
 curl http://example.com/slides.md | slides
 ```
 
+### Configuration
+
+Copy the default configuration file to the your local home config directory.
+
+```bash
+slides config -c
+```
+
 ### Keymaps
 
-#### Slide
-
-Go to specific slide:
-
-- number: `1`-`9`
-
-Go to first slide:
-
-- `g`
-
-Go to last slide:
-
-- `G`
-
-Go to previous slide:
-
-- `h`
-
-Go to next slide:
-
-- `l`
-
-Scroll donw/up slide:
-
-- `j`: scroll down
-- `k`: scroll up
-
-#### Search
-
-- `/`: active search
-- `n`: goto next slide if search word is matched
-- `N`: goto previous slide if search word is matched
-
-#### Tagbar
-
-Toggle Tagbar, default is hide
-
-- `t`
-
-#### Help
-
-- `?`
-
-#### Quit
-
-- `q` `esc` `ctrl-c`
+See [keymaps](./config/default.yaml) in default confguiration file.
 
 ## Inspiration by
 

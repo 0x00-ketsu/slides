@@ -1,0 +1,53 @@
+# Tagbar show the paginations of the slides
+tagbar:
+  # The width of the tagbar
+  width: 35
+
+# Keymaps for the presentation
+keymaps:
+  # The key to quit the presentation
+  quit:
+    - q
+    - ctrl+c
+
+  # The key to toggle the help
+  help: "?"
+
+  # The key to tagbar
+  tagbar:
+    toggle: t
+
+  # The key to search the slides
+  search:
+    forward: /
+    next-match: n
+    prev-match: N
+
+  # The key to move between the slides
+  slide:
+    first: 1
+    last: 0
+    prev:
+      - h
+      - left # ←
+    next:
+      - l
+      - right # →
+
+  # The key to move the slides
+  move:
+    top: g
+    bottom: G
+    up:
+      - k
+      - up # ↑
+    down:
+      - j
+      - down # ↓
+
+  # The key to scroll the slides
+  scroll:
+    up:
+      - ctrl+u
+    down:
+      - ctrl+d
